@@ -68,7 +68,7 @@ header li{
 }
 header a{
     display:block;
-    color:#217dbb;
+    color:#217db4;
     padding:10px
 }
 header a:hover{
@@ -199,11 +199,11 @@ footer{
     content:'';
     top:100%;
     height:1px;
-    width:50px;
+    width:parent;
     left:0;
     right:0;
     margin:0 auto;
-    background:#8c0023;
+    background:#a0cfee;
 }
 .background-alt{
     background:#f2f2f5
@@ -225,6 +225,7 @@ footer{
     left:50%;
     transform:translate(-50%, -50%);
     text-align:center
+	padding-top:5px
 }
 #lead-content h1,#lead-content h2{
     margin:0
@@ -238,7 +239,7 @@ footer{
     line-height:0.9em
 }
 #lead-content h2{
-    color:#a0cfee;
+    color:#ffffff;
     font-weight:500;
     font-size:2.25em;
     margin-bottom:15px
@@ -261,24 +262,27 @@ footer{
     width:100%;
     text-align:center;
     z-index:10;
-    bottom:15px;
+    bottom:-75%;
     color:#fff
 }
 #lead-down span{
     cursor:pointer;
     display:block;
     margin:0 auto;
-    width:35px;
-    height:35px;
+    width:25px;
+    height:25px;
     border-radius:50%;
     border:3px solid #a0cfee;
     text-align:center
 }
+/*
 #lead-down i{
     animation:pulsate 1.5s ease;
     animation-iteration-count:infinite;
     padding-top:5px
 }
+
+*/
 @keyframes pulsate{
     0%{
         transform:scale(1, 1)
@@ -314,28 +318,7 @@ footer{
     position:relative;
     max-width:1000px
 }
-#experience-timeline:before{
-    position:absolute;
-    content:'';
-    top:0;
-    bottom:0;
-    left:303px;
-    right:auto;
-    height:100%;
-    width:3px;
-    background:#3498db;
-    z-index:0
-}
-#experience-timeline:after{
-    position:absolute;
-    content:'';
-    width:3px;
-    height:40px;
-    background:#3498db;
-    background:linear-gradient(to bottom, #3498db, rgba(52,152,219,0));
-    top:100%;
-    left:303px
-}
+
 .vtimeline-content{
     margin-left:350px;
     background:#fff;
@@ -593,6 +576,18 @@ footer{
     font-weight:500;
     margin:0 0 15px 0
 }
+
+.fa-github,
+.fa-envelope,
+.fa-linkedin {
+	color:#ffffff;
+}
+
+.fa-github:hover,
+.fa-envelope:hover,
+.fa-linkedin:hover{
+	color:#dddddd;
+}
 .optional-section-block p,.optional-section-block ul{
     margin:0 0 15px 0;
     color:#74808a;
@@ -619,13 +614,12 @@ footer{
     .vtimeline-content{
         margin-left:70px
     }
-}
-@media only screen and (max-width: 992px){
+
     #lead{
         height:auto;
         min-height:auto;
         max-height:auto;
-        padding:100px 15px
+        padding:100px 5px
     }
     #lead-content{
         position:relative;
@@ -639,6 +633,11 @@ footer{
     #lead-content h2{
         font-size:1.75em
     }
+	
+	#lead-down h3{
+        margin:auto;
+    }
+	
     #about{
         text-align:center
     }
