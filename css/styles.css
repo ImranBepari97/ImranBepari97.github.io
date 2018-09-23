@@ -1,4 +1,9 @@
 /*! Title: Dev Portfolio Template Version: 1.2.1 Last Change: 08/28/2017 Author: Ryan Fitzgerald Repo: https://github.com/RyanFitzgerald/devportfolio-template Issues: https://github.com/RyanFitzgerald/devportfolio-template/issues Description: This file contains all the styles associated with the page that don't come from third party libraries. This file gets compiled using Gulp and send to the /css folder which is then loaded on the page. */
+
+html {
+	font-size: 100%;
+}
+
 body{
      font-family:'Lato', sans-serif;
     font-size:16px
@@ -174,7 +179,9 @@ footer{
     padding:15px 25px;
     border:3px solid #fff;
     border-radius:30px;
-    transition:.5s ease all
+    transition:.5s ease all;
+	text-align: center;
+	
 }
 .btn-rounded-white:hover{
     color:#217dbb;
@@ -216,6 +223,7 @@ footer{
     background:url(../img/background.jpg);
     background-size:cover;
     padding:15px;
+	text-align:center;
     overflow:hidden
 }
 #lead-content{
@@ -224,7 +232,7 @@ footer{
     top:50%;
     left:50%;
     transform:translate(-50%, -50%);
-    text-align:center
+    text-align:center;
 	padding-top:5px
 }
 #lead-content h1,#lead-content h2{
@@ -295,13 +303,19 @@ footer{
     }
 }
 #about{
+	margin-left: auto;
+    margin-right: auto;
     padding:75px 15px;
+	text-align:center;
     border-bottom:1px solid #dcd9d9
+	
 }
 #about h2{
+	text-align:center;
     color:#374054
 }
 #about p{
+	text-align:center;
     color:#74808a;
     margin:0
 }
@@ -645,7 +659,7 @@ footer{
         text-align:left
     }
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 767px){
     header{
         position:fixed;
         display:none;
@@ -654,9 +668,14 @@ footer{
         bottom:0;
         height:100%
     }
+	
+	/*
     #mobile-menu-open,#mobile-menu-close{
         display:block
     }
+	*/
+	
+	/*
     #menu{
         height:100%;
         overflow-y:auto;
@@ -664,10 +683,14 @@ footer{
         border-radius:0;
         width:100%
     }
+	
+	*/
+	
     #menu li{
-        display:block;
-        margin-bottom:10px
+        margin-bottom:-10px
     }
+	
+
     #lead-content h1{
         font-size:2em
     }
@@ -678,8 +701,9 @@ footer{
         padding:10px 20px
     }
     #lead-down{
-        display:none
+        display:block
     }
+	
     .education-block h3,.education-block span{
         float:none
     }
